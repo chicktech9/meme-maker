@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f8ff"
+    android:orientation="vertical"
+    tools:context="com.example.hlupico.mememaker.NewMemeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a picture"
+        android:textColor="#00ff00"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="163dp"
+            android:layout_height="36dp"
+            android:layout_margin="8dp"
+
+            android:background="#6f1ec5"
+            android:text="From Gallery"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="171dp"
+            android:layout_height="38dp"
+            android:layout_margin="8dp"
+            android:background="#6f1ec5"
+            android:text="Take photo"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/shut_up_and_take_my_money" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:text="Top Text"
+            android:textColor="#00ff00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:text="Bottom text"
+            android:textColor="#00ff00"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="8dp"
+        android:background="#6f1ec5"
+        android:text="Save"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
